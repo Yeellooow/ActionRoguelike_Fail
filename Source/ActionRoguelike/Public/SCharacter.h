@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
 #include "Camera/CameraComponent.h"
 #include "SCharacter.generated.h"
 
 class UCameraComponent;
+class USpringArmComponent;
 
 UCLASS()
 class ACTIONROGUELIKE_API ASCharacter : public ACharacter
@@ -20,6 +20,7 @@ public:
 
 protected:
 
+	USpringArmComponent* SpringARmComp;
 	UCameraComponent* CameraComp;
 
 
